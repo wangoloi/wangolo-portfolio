@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="wb.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    
+    <!-- Manifest file contains metadata for the web app when installed on devices -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- Note: %PUBLIC_URL% is replaced with the URL during the build -->
+    
+    <title>Wangolo Bachawa's Personal Portfolio</title>
+    <!-- Link to external CSS files for styling -->
+    <link rel="stylesheet" href="App.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- Link to the JavaScript file -->
+    <script src="index.js"></script>
+
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <!-- Button to toggle dark mode -->
+      <button id="darkModeToggle">Dark Mode</button>
+      <div class="container">
+          <!-- Portfolio title and description -->
+          <h1>Wangolo Bachawa's Personal Portfolio</h1>
+          <p>Computer Science Student | Cybersecurity Enthusiast | Future Military Cyber Expert</p>
+      </div>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <!-- Navigation links for different sections -->
+        <li><a href="#about Me">About Me</a></li>
+        <li><a href="#Personal Details">Personal Details</a></li>
+        <li><a href="#My Hobby">Video</a></li>
+        <li><a href="#Useful Links">Useful Links</a></li>
+      </ul>
+    </nav>
+    
+    <!-- About Me Section -->
+    <section id="about Me" class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm Wangolo Bachawa, a passionate Computer Science student at Uganda Christian University. 
+           I specialize in Python, JavaScript, and React, with a strong focus on networking, cybersecurity, digital forensics, and web development. 
+           My goal is to become a cybersecurity expert and serve in the military, securing and protecting digital systems.</p>
+        <!-- Profile image -->
+        <img src="wb.jpg" alt="Wangolo's Profile Picture" style="width: 500px;height: 800px;;" class="profile-pic">
+    </section>
+    
+    <!-- Personal Details Section -->
+    <section id="Personal Details" class="container">
+        <h2>Personal Details</h2>
+        <ul>
+            <li><strong>Student ID:</strong> M23B23/042</li>
+            <li><strong>Course:</strong> Bachelor of Science in Computer Science</li>
+            <li><strong>Year:</strong> Year 2:2</li>
+            <li><strong>Interests:</strong> Python, JavaScript and React, along with networking, cybersecurity, digital forensics, web development, and computer vision.</li>
+        </ul>
+    </section>
+    
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        // Add event listener to toggle dark mode on button click
+        document.getElementById('darkModeToggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+
+    <!-- My Hobby Section (YouTube Video) -->
+    <section id="my-hobby" class="container">
+      <h2>My Hobby Video</h2>
+      <!-- Embedded YouTube video -->
+      <iframe 
+          width="560" height="315"
+          src="https://www.youtube.com/embed/SW6AE76Pi50"
+          title="YouTube video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+      </iframe>
+      <hr>
+    </section>
+
+    <!-- Academic Results Section -->
+    <section id="results" class="container">
+      <h2>Year 1 Semester 1 Results</h2>
+      <table border="1">
+          <tr>
+              <th>Course Code</th>
+              <th>Course Title</th>
+              <th>Grade</th>
+              <th>Credit Units</th>
+          </tr>
+          <!-- Course Results -->
+          <tr>
+              <td>CS101</td>
+              <td>Essentials of Computer Hardware</td>
+              <td>A</td> 
+              <td>4</td> 
+          </tr>
+          <tr>
+              <td>CS102</td>
+              <td>Data Structures</td>
+              <td>B+</td> 
+              <td>3</td> 
+          </tr>
+          <tr>
+              <td>CS103</td>
+              <td>Computer Networks</td>
+              <td>A</td> 
+              <td>4</td> 
+          </tr>
+          <tr>
+              <td>CS104</td>
+              <td>Database Systems</td>
+              <td>B</td> 
+              <td>3</td> 
+          </tr>
+          <tr>
+              <td>CS105</td>
+              <td>Data Science</td>
+              <td>B+</td> 
+              <td>4</td> 
+          </tr>
+          <tr>
+              <td>CS106</td>
+              <td>Computer Architecture</td>
+              <td>C+</td> 
+              <td>3</td> 
+          </tr>
+          <tr>
+              <td>CS107</td>
+              <td>Structured Programming</td>
+              <td>C</td> 
+              <td>2</td> 
+          </tr>
+      </table>
+    </section>
+
+    <!-- Useful Links Section -->
+    <section id="Useful Links" class="container">
+        <h2>Useful Links</h2>
+        <p><a href="https://scholar.google.com/" target="_blank">My Favorite Website</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Uganda_Christian_University" target="_blank">Uganda Christian University Website</a></p>
+        <hr>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer>
+      <div class="contact-info">
+          <h2>Contact Information</h2>
+          <p><strong>Email</strong>: <a href="mailto:wangolobachawa9@gmail.com">wangolobachawa9@gmail.com</a></p>
+          <p><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/wangolo-bachawa-2b6315317" target="_blank">LinkedIn Profile</a></p>
+          <p><strong>GitHub</strong>: <a href="https://github.com/wangolo" target="_blank">GitHub Profile</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

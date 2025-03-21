@@ -1,0 +1,356 @@
+.course-manager {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--card-background);
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-manager h2 {
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.course-form {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: var(--background-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.submit-button,
+.cancel-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submit-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: var(--secondary-color);
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.cancel-button {
+  background-color: var(--card-background);
+  color: var(--text-color);
+  margin-left: 1rem;
+}
+
+.cancel-button:hover {
+  background-color: var(--border-color);
+}
+
+.courses-list {
+  margin-top: 2rem;
+}
+
+.courses-list h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.help-text {
+  color: var(--text-color);
+  opacity: 0.8;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--background-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.courses-table th,
+.courses-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.courses-table th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+}
+
+.courses-table tr {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.courses-table tr:hover {
+  background-color: var(--hover-color);
+}
+
+.courses-table tr.selected-row {
+  background-color: var(--hover-color);
+  position: relative;
+}
+
+.courses-table tr.selected-row::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: var(--primary-color);
+}
+
+.actions-cell {
+  width: 200px;
+  padding: 0.5rem !important;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  opacity: 0;
+  animation: fadeIn 0.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.edit-button,
+.delete-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.875rem;
+}
+
+.edit-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.delete-button {
+  background-color: #dc2626;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #b91c1c;
+}
+
+.results-summary {
+  background-color: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.results-summary h3 {
+  color: var(--primary-color);
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.results-summary p {
+  color: var(--text-color);
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* GPA Summary Styles */
+.gpa-summary {
+  background-color: var(--background-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gpa-summary h3 {
+  color: var(--text-color);
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.gpa-overall {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.gpa-by-semester {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.semester-stats {
+  background-color: var(--card-background);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.semester-stats h4 {
+  color: var(--primary-color);
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+}
+
+.semester-stats p {
+  margin: 0.5rem 0;
+  color: var(--text-color);
+}
+
+/* List Header Styles */
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.semester-filter {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.semester-filter:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+@media (max-width: 768px) {
+  .course-manager {
+    padding: 1rem;
+  }
+
+  .course-form {
+    padding: 1rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 16px; /* Prevent zoom on mobile */
+  }
+
+  .submit-button,
+  .cancel-button {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .courses-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .actions-cell {
+    width: auto;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .edit-button,
+  .delete-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .gpa-summary {
+    padding: 1rem;
+  }
+
+  .gpa-by-semester {
+    grid-template-columns: 1fr;
+  }
+
+  .list-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .semester-filter {
+    width: 100%;
+  }
+} 

@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* src/index.css */
+body {
+  font-family: Arial, sans-serif; /* Base font */
+  margin: centre; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #8fb3bc; /* Light background */
+  color: #222; /* Default text color */
+}
+
+nav {
+  background: #7ac4eb; /* Blue background */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Align links to the right */
+}
+
+nav a {
+  color: rgb(44, 16, 147); /* Text color for links */
+  margin: 0 15px; /* Space around links */
+  text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* General Styles for Error Messages */
+.error {
+  color: red; /* Error text color */
+  font-size: 12px; /* Font size for error */
+}
+
+/* Container adjustments for portfolio */
+.container {
+  padding: 25px; /* Padding inside the container */
+}
