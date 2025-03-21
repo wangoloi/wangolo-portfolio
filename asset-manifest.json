@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/wangolo-portfolio/static/css/main.162fc8b2.css",
+    "main.js": "/wangolo-portfolio/static/js/main.871033c6.js",
+    "static/js/453.e2268bff.chunk.js": "/wangolo-portfolio/static/js/453.e2268bff.chunk.js",
+    "static/media/wb.jpg": "/wangolo-portfolio/static/media/wb.bdbe61c8a78783513970.jpg",
+    "index.html": "/wangolo-portfolio/index.html",
+    "main.162fc8b2.css.map": "/wangolo-portfolio/static/css/main.162fc8b2.css.map",
+    "main.871033c6.js.map": "/wangolo-portfolio/static/js/main.871033c6.js.map",
+    "453.e2268bff.chunk.js.map": "/wangolo-portfolio/static/js/453.e2268bff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.162fc8b2.css",
+    "static/js/main.871033c6.js"
+  ]
+}
